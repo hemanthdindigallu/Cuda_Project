@@ -2,7 +2,14 @@ import cv2
 import numpy as np
 
 def load(input):
-    return 
+    try:
+        image = cv2.imread(input, cv2.IMREAD_GRAYSCALE)
+        if image is None:
+            raise IOError(f"Cannot open image {input}")
+        return image
+    except Exception as e:
+        print(e)
+        return None
 
 def apply_gaussian_filter(image):
     return
