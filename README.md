@@ -15,16 +15,16 @@ This Python script performs Gaussian filtering on a grayscale image using OpenCV
 * Open the terminal (`Ctrl+``).
 * Navigate to your project directory:
 
-cd path\to\your\project
+* *  cd path\to\your\project
 * Create a virtual environment:
 
-python -m venv venv
+* * python -m venv venv
 * Activate the virtual environment:
-Windows:
-.\venv\Scripts\activate
+* * Windows:
+* * * .\venv\Scripts\activate
 
-Mac/Linux:
-source venv/bin/activate
+* * Mac/Linux:
+* * * source venv/bin/activate
 
 3.  Install Required Python Packages:
 
