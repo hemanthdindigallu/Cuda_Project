@@ -37,6 +37,8 @@ Run the script:
 
 * * python main.py
 
+* Delete previous outputs to see the changes.
+
 * Following these steps should help you successfully run the image processing code using only NumPy and OpenCV in VS Code. If you encounter any issues, please let me know!
 
 ## Proof of Execution
