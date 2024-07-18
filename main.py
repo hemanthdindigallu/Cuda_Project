@@ -11,8 +11,19 @@ def load(input):
         print(e)
         return None
 
-def apply_gaussian_filter(image):
-    return
+def gaussian_filter(image):
+    kernel = np.array([
+        [1, 4, 7, 4, 1],
+        [4, 16, 26, 16, 4],
+        [7, 26, 41, 26, 7],
+        [4, 16, 26, 16, 4],
+        [1, 4, 7, 4, 1]
+    ], dtype=np.float32)
+    kernel /= 273.0
+
+    result = cv2.filter2D(image, -1, kernel)
+
+    return result
 
 def save(output, result):
     try:
@@ -28,7 +39,7 @@ def main():
     if image is None:
         return
     
-    result = apply_gaussian_filter(image)
+    result = gaussian_filter(image)
     
     save(output, result)
     
