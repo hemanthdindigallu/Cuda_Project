@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import os
 
 def load(input):
     try:
@@ -31,19 +32,29 @@ def save(output, result):
     except Exception as e:
         print(f"Failed to save Image {output}: {e}")
 
+def process_images_in_folder(input_folder, output_folder):
+    os.makedirs(output_folder, exist_ok=True)
+
+    for filename in os.listdir(input_folder):
+        if filename.lower().endswith(('.tiff', '.tif')):
+            input = os.path.join(input_folder, filename)
+            output = os.path.join(output_folder, f"{os.path.splitext(filename)[0]}_gaussian.tiff")
+
+            image = load(input)
+            if image is None:
+                continue
+
+            result = gaussian_filter(image)
+
+            save(output, result)
+
+            print(f"Processed image saved to: {output}")
+
 def main():
-    input = "example_image.tiff"
-    output = "example_gaussian.tiff"
-    
-    image  = load(input)
-    if image is None:
-        return
-    
-    result = gaussian_filter(image)
-    
-    save(output, result)
-    
-    print(f"Processed image saved to : {output}")
+    input_folder = "input_images"
+    output_folder = "output_images"
+
+    process_images_in_folder(input_folder, output_folder)
     
 if __name__ == "__main__":
     main()
