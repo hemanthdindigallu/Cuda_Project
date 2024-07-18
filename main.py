@@ -15,7 +15,10 @@ def apply_gaussian_filter(image):
     return
 
 def save(output, result):
-    return
+    try:
+        cv2.imwrite(output,result)
+    except Exception as e:
+        print(f"Failed to save Image {output}: {e}")
 
 def main():
     input = "example_image.tiff"
