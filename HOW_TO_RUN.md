@@ -50,3 +50,5 @@ Run the script:
 * Input and Output Folders after running the code.
 
 ![alt text](image-2.png)
+
+* Works with multiple inputs as well
