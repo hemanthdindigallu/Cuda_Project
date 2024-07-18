@@ -41,8 +41,9 @@ Run the script:
 
 ## Proof of Execution
 
-* Input and Output Folders before and after running the code.
+* Input and Output Folders before and after running the code. (Shown with 3 inputs for example)
 ![alt text](image.png)
 * Running the code.
 ![alt text](image-1.png)
 * Input and Output Folders after running the code.
+![alt text](image-2.png)
