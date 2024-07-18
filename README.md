@@ -1,32 +1,47 @@
-# CUDAatScaleForTheEnterpriseCourseProjectTemplate
-This is a template for the course project for the CUDA at Scale for the Enterprise
+# Gaussian Filtering
+
 
 ## Project Description
 
-Beyond just being a template for course members, this project can be used by non-course members as the general structure for CUDA projects.
+This Python script performs Gaussian filtering on a grayscale image using OpenCV and NumPy libraries. Gaussian filtering is a common image processing technique used to blur images and reduce noise. The script reads an input image in TIFF format, applies a Gaussian filter to it, and saves the processed image in the same format.
 
-## Code Organization
+## How to Run the Code
 
-```bin/```
-This folder should hold all binary/executable code that is built automatically or manually. Executable code should have use the .exe extension or programming language-specific extension.
+1. Make sure you have Python installed.
 
-```data/```
-This folder should hold all example data in any format. If the original data is rather large or can be brought in via scripts, this can be left blank in the respository, so that it doesn't require major downloads when all that is desired is the code/structure.
+2. Set Up a Virtual Environment in VS Code:
 
-```lib/```
-Any libraries that are not installed via the Operating System-specific package manager should be placed here, so that it is easier for inclusion/linking.
+* Open VS Code.
+* Open the terminal (`Ctrl+``).
+* Navigate to your project directory:
 
-```src/```
-The source code should be placed here in a hierarchical fashion, as appropriate.
+cd path\to\your\project
+* Create a virtual environment:
 
-```README.md```
-This file should hold the description of the project so that anyone cloning or deciding if they want to clone this repository can understand its purpose to help with their decision.
+python -m venv venv
+* Activate the virtual environment:
+Windows:
+.\venv\Scripts\activate
 
-```INSTALL```
-This file should hold the human-readable set of instructions for installing the code so that it can be executed. If possible it should be organized around different operating systems, so that it can be done by as many people as possible with different constraints.
+Mac/Linux:
+source venv/bin/activate
 
-```Makefile or CMAkeLists.txt or build.sh```
-There should be some rudimentary scripts for building your project's code in an automatic fashion.
+3.  Install Required Python Packages:
 
-```run.sh```
-An optional script used to run your executable code, either with or without command-line arguments.
+In the terminal with the virtual environment activated, install the necessary packages:
+
+pip install numpy opencv-python-headless
+
+4. Configure VS Code Python Interpreter:
+
+Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P).
+Type Python: Select Interpreter and select the interpreter that matches your virtual environment. It should show up as something like Python 3.x.x (venv).
+
+5. Run the Script:
+
+In the terminal, ensure your virtual environment is activated.
+Run the script:
+
+python main.py
+
+Following these steps should help you successfully run the image processing code using only NumPy and OpenCV in VS Code. If you encounter any issues, please let me know!
