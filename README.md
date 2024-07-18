@@ -28,20 +28,20 @@ This Python script performs Gaussian filtering on a grayscale image using OpenCV
 
 3.  Install Required Python Packages:
 
-In the terminal with the virtual environment activated, install the necessary packages:
+* In the terminal with the virtual environment activated, install the necessary packages:
 
-pip install numpy opencv-python-headless
+* * pip install numpy opencv-python-headless
 
 4. Configure VS Code Python Interpreter:
 
-Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P).
-Type Python: Select Interpreter and select the interpreter that matches your virtual environment. It should show up as something like Python 3.x.x (venv).
+* Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P).
+* Type Python: Select Interpreter and select the interpreter that matches your virtual environment. It should show up as something like Python 3.x.x (venv).
 
 5. Run the Script:
 
-In the terminal, ensure your virtual environment is activated.
+* In the terminal, ensure your virtual environment is activated.
 Run the script:
 
-python main.py
+* * python main.py
 
-Following these steps should help you successfully run the image processing code using only NumPy and OpenCV in VS Code. If you encounter any issues, please let me know!
+* Following these steps should help you successfully run the image processing code using only NumPy and OpenCV in VS Code. If you encounter any issues, please let me know!
