@@ -51,4 +51,4 @@ Run the script:
 
 ![alt text](image-2.png)
 
-* Works with multiple inputs as well
+* Works with multiple inputs as well. 
